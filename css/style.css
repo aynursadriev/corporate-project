@@ -265,19 +265,11 @@ h6 {
   position: relative;
   font-size: 0.875rem;
   line-height: 1.2;
-}
-
-.catalog-form__custom-button:focus-within {
-  outline: 0.125rem solid #000;
+  border: 0.0625rem solid transparent;
 }
 
 .catalog-form__custom-button._form-error {
-  outline: 0.0625rem solid red;
-}
-
-.catalog-form__custom-button:active {
-  outline: none;
-  border: none;
+  border: 0.0625rem solid red;
 }
 
 .catalog-form__file {
@@ -546,11 +538,11 @@ textarea.input {
 .select__value:after {
   content: "";
   background: url("../img/mainpage-catalog/arrow.svg") no-repeat center center;
+  background-size: contain;
   -ms-flex-item-align: stretch;
       -ms-grid-row-align: stretch;
       align-self: stretch;
-  min-width: 0.75rem;
-  min-height: 1.05rem;
+  width: 0.75rem;
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
 }
@@ -667,6 +659,7 @@ textarea.input {
 .mainpage-tabs__title::after {
   content: "";
   background: url("../img/mainpage-catalog/arrow.svg") no-repeat center center;
+  background-size: contain;
   -ms-flex-item-align: stretch;
       -ms-grid-row-align: stretch;
       align-self: stretch;
